@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{AE79DFEC-834F-418E-AF83-1667C77D7C0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{538A0F7E-9368-4547-AE88-B0EBCD837BF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HT.Domain", "HarmonicaTones.Domain\HT.Domain.csproj", "{61A76E76-9026-42E1-B6C9-ED84AEDD32F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HT.Service", "HarmonicaTones.Service\HT.Service.csproj", "{D652EB1B-C5E0-4417-B818-78AF8407B553}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HT.Tests", "HarmonicaTones.Tests\HT.Tests.csproj", "{413A3071-4B7D-48A8-8AB1-EAAC7EFC06A6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HT.Presentation", "HarmonicaTones.Presentation\HT.Presentation.csproj", "{10C42EE0-8541-4FF8-ADFB-153294891635}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61A76E76-9026-42E1-B6C9-ED84AEDD32F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61A76E76-9026-42E1-B6C9-ED84AEDD32F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61A76E76-9026-42E1-B6C9-ED84AEDD32F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61A76E76-9026-42E1-B6C9-ED84AEDD32F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D652EB1B-C5E0-4417-B818-78AF8407B553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D652EB1B-C5E0-4417-B818-78AF8407B553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D652EB1B-C5E0-4417-B818-78AF8407B553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D652EB1B-C5E0-4417-B818-78AF8407B553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{413A3071-4B7D-48A8-8AB1-EAAC7EFC06A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{413A3071-4B7D-48A8-8AB1-EAAC7EFC06A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{413A3071-4B7D-48A8-8AB1-EAAC7EFC06A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{413A3071-4B7D-48A8-8AB1-EAAC7EFC06A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C42EE0-8541-4FF8-ADFB-153294891635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C42EE0-8541-4FF8-ADFB-153294891635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C42EE0-8541-4FF8-ADFB-153294891635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C42EE0-8541-4FF8-ADFB-153294891635}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{61A76E76-9026-42E1-B6C9-ED84AEDD32F5} = {AE79DFEC-834F-418E-AF83-1667C77D7C0C}
+		{D652EB1B-C5E0-4417-B818-78AF8407B553} = {AE79DFEC-834F-418E-AF83-1667C77D7C0C}
+		{413A3071-4B7D-48A8-8AB1-EAAC7EFC06A6} = {538A0F7E-9368-4547-AE88-B0EBCD837BF0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C5AB71E-14D5-4D8E-A2F5-36A9311AAC15}
+	EndGlobalSection
+EndGlobal

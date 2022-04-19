@@ -1,0 +1,27 @@
+﻿@model HT.Presentation.Models.ScaleViewModel
+
+<div class="container">
+    <form asp-action="ChangeTune" class="row">
+        <div asp-validation-summary="ModelOnly" class="text-danger row"></div>
+
+        <div class="form-group col-1">
+            <label asp-for="Tone" class="control-label"></label>
+            <input asp-for="Tone" class="form-control" />
+            @*<span asp-validation-for="Tone" class="text-danger"></span>*@
+        </div>
+        <div class="form-group col-1" hidden>
+            <label asp-for="Pitch" class="control-label"></label>
+            <input asp-for="Pitch" class="form-control" />
+        </div>
+        <div class="form-group col-3">
+            <label asp-for="Scale" class="control-label"></label>
+            <input asp-for="Scale" class="form-control" />
+        </div>
+
+        <div class="row"> &nbsp; </div>
+
+        <div class="form-group  col text-center">
+            <input type="submit" value="Change Tone" class="btn btn-primary" />
+        </div>
+    </form>
+</div>

@@ -1,0 +1,17 @@
+﻿@model HT.Presentation.Models.HarmonicaViewModel
+
+@{
+    ViewData["Title"] = "Harmonica";
+}
+
+<div>
+    <h1 class="text-center">Harmonica</h1>
+</div>
+
+<hr />
+@await Html.PartialAsync("_Harmonica")
+<hr />
+
+<div class="container-header row">
+    @await Html.PartialAsync("Settings", new ScaleViewModel("C"))
+</div>

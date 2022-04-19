@@ -1,0 +1,33 @@
+html {
+    font-size: 14px;
+    background-color: black;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+        background-color: black;
+        color: white;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    background-color: black;
+    color: white;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: black;
+    color: white;
+}
+
+.btn-harmonica-hole {
+    padding: 0.5rem 0rem;
+    font-size: 1.25rem;
+    border-radius: 2rem;
+    width: 58px;
+}

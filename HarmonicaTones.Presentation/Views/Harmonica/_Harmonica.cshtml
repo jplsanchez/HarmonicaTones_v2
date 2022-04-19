@@ -1,0 +1,86 @@
+﻿@model HT.Presentation.Models.HarmonicaViewModel
+
+<div class="d-flex p-2 justify-content-between">
+    <table class="mx-auto">
+        <thead>
+
+        </thead>
+
+        <tbody>
+            <tr class=" Blow text-center">
+                @foreach (var item in Model.BlowNotes)
+                {
+                    <th class="btn btn-warning btn-harmonica-hole">
+                        @Html.DisplayFor(d => item)
+                    </th>
+                    <th></th>
+                }
+            </tr>
+            <tr class=" Number text-center">
+                @for (var i = 0; i < Model.BlowNotes.Count; i++)
+                {
+                    <th class="text-center">
+                        @(i+1)
+                    </th>
+                    <th></th>
+                }
+            </tr>
+            <tr class=" Draw text-center">
+                @foreach (var item in Model.DrawNotes)
+                {
+                    <th class="btn btn-warning btn-harmonica-hole">
+                        @Html.DisplayFor(d => item)
+                    </th>
+                    <th></th>
+                }
+            </tr>
+            <tr class=" Bend1 text-center">
+                @foreach (var item in Model.Bend1Notes)
+                {
+                    <th>
+                        @if (item != null)
+                        {
+                            <div class="btn btn-outline-warning btn-harmonica-hole">
+                                @Html.DisplayFor(d => item)
+                            </div>
+                        }
+                    </th>
+                    <th></th>
+                }
+            </tr>
+            <tr class=" Bend2 text-center">
+                @foreach (var item in Model.Bend2Notes)
+                {
+                    <th>
+                        @if (item != null)
+                        {
+                            <div class="btn btn-outline-warning btn-harmonica-hole">
+                                @Html.DisplayFor(d => item)
+                            </div>
+                        }
+                    </th>
+                    <th></th>
+                }
+            </tr>
+            <tr class=" Bend3 text-center">
+                @foreach (var item in Model.Bend3Notes)
+                {
+                    <th>
+                        @if (item != null)
+                        {
+                            <div class="btn btn-outline-warning btn-harmonica-hole">
+                                @Html.DisplayFor(d => item)
+                            </div>
+                        }
+                    </th>
+                    <th></th>
+                }
+            </tr>
+        </tbody>
+    </table>
+    <div class="p-1">
+        <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+    </div>
+</div>
