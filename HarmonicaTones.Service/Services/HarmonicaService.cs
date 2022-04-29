@@ -30,14 +30,32 @@ namespace HT.Service.Services
 
             for (int i = 0; i < view.BlowNotes.Count; i++)
             {
-                view.BlowNotes[i] = view.BlowNotes[i][..^1];
-                view.DrawNotes[i] = view.DrawNotes[i][..^1];
-                if (view.Bend1Notes[i] != null)
-                    view.Bend1Notes[i] = view.Bend1Notes[i][..^1];
-                if (view.Bend2Notes[i] != null)
-                    view.Bend2Notes[i] = view.Bend2Notes[i][..^1];
-                if (view.Bend3Notes[i] != null)
-                    view.Bend3Notes[i] = view.Bend3Notes[i][..^1];
+                view.BlowNotes[i] = (view.BlowNotes[i].Item1[..^1], false);
+                view.DrawNotes[i] = (view.DrawNotes[i].Item1[..^1], false);
+                if (view.Bend1Notes[i].Item1 != "")
+                    view.Bend1Notes[i] = (view.Bend1Notes[i].Item1[..^1], false);
+                if (view.Bend2Notes[i].Item1 != "")
+                    view.Bend2Notes[i] = (view.Bend2Notes[i].Item1[..^1], false);
+                if (view.Bend3Notes[i].Item1 != "")
+                    view.Bend3Notes[i] = (view.Bend3Notes[i].Item1[..^1], false);
+            }
+            return view;
+        }
+
+        public HarmonicaView GetNotesAndScale()
+        {
+            var view = new HarmonicaView(_harmonica);
+
+            for (int i = 0; i < view.BlowNotes.Count; i++)
+            {
+                view.BlowNotes[i] = (view.BlowNotes[i].Item1[..^1], false);
+                view.DrawNotes[i] = (view.DrawNotes[i].Item1[..^1], false);
+                if (view.Bend1Notes[i].Item1 != "")
+                    view.Bend1Notes[i] = (view.Bend1Notes[i].Item1[..^1], false);
+                if (view.Bend2Notes[i].Item1 != "")
+                    view.Bend2Notes[i] = (view.Bend2Notes[i].Item1[..^1], false);
+                if (view.Bend3Notes[i].Item1 != "")
+                    view.Bend3Notes[i] = (view.Bend3Notes[i].Item1[..^1], false);
             }
             return view;
         }

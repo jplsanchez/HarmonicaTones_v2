@@ -8,10 +8,15 @@
     <h1 class="text-center">Harmonica</h1>
 </div>
 
+
+@*<div class="container-header row">
+    @await Html.PartialAsync("HarmonicaSettings", Model)
+</div>*@
+
 <hr />
 @await Html.PartialAsync("_Harmonica")
 <hr />
 
 <div class="container-header row">
-    @await Html.PartialAsync("Settings", new ScaleViewModel("C"))
+    @await Html.PartialAsync("ScaleSettings", new ScaleViewModel("C"))
 </div>

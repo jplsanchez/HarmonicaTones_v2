@@ -15,19 +15,19 @@ namespace HT.Presentation.Models
 
         [Required]
         [RegularExpression(NoteFormat, ErrorMessage = NoteErrorMessage)]
-        public List<string> BlowNotes { get; set; }
+        public List<(string, bool)> BlowNotes { get; set; }
 
         [Required]
         [RegularExpression(NoteFormat, ErrorMessage = NoteErrorMessage)]
-        public List<string> DrawNotes { get; set; }
+        public List<(string, bool)> DrawNotes { get; set; }
 
         [RegularExpression(NoteFormat, ErrorMessage = NoteErrorMessage)]
-        public List<string?> Bend1Notes { get; set; }
+        public List<(string, bool)> Bend1Notes { get; set; }
 
         [RegularExpression(NoteFormat, ErrorMessage = NoteErrorMessage)]
-        public List<string?> Bend2Notes { get; set; }
+        public List<(string, bool)> Bend2Notes { get; set; }
 
         [RegularExpression(NoteFormat, ErrorMessage = NoteErrorMessage)]
-        public List<string?> Bend3Notes { get; set; }
+        public List<(string, bool)> Bend3Notes { get; set; }
     }
 }

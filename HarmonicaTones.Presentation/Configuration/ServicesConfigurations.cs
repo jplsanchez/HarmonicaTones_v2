@@ -13,6 +13,7 @@ namespace HT.Presentation.Configuration
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddScoped<IHarmonicaService, HarmonicaService>();
+            services.AddScoped<IScalesService, ScaleService>();
 
             return services;
         }
@@ -22,7 +23,7 @@ namespace HT.Presentation.Configuration
     {
         public UserProfile()
         {
-            CreateMap<HarmonicaView, HarmonicaViewModel>().ReverseMap();
+            CreateMap<HarmonicaView, HarmonicaViewModel>();
         }
     }
 }

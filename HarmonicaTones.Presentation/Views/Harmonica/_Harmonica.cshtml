@@ -2,17 +2,24 @@
 
 <div class="d-flex p-2 justify-content-between">
     <table class="mx-auto">
-        <thead>
-
-        </thead>
-
+        <thead/>
         <tbody>
             <tr class=" Blow text-center">
                 @foreach (var item in Model.BlowNotes)
                 {
-                    <th class="btn btn-warning btn-harmonica-hole">
-                        @Html.DisplayFor(d => item)
-                    </th>
+                    @if( item.Item2)
+                    {
+                        <th class="btn btn-warning btn-harmonica-hole">
+                            @Html.DisplayFor(d => item.Item1)
+                        </th>
+                    } 
+                    @if(!item.Item2)
+                    {
+                        <th class="btn btn-outline-warning btn-harmonica-hole">
+                            @Html.DisplayFor(d => item.Item1)
+                        </th>
+                    } 
+
                     <th></th>
                 }
             </tr>
@@ -28,9 +35,18 @@
             <tr class=" Draw text-center">
                 @foreach (var item in Model.DrawNotes)
                 {
-                    <th class="btn btn-warning btn-harmonica-hole">
-                        @Html.DisplayFor(d => item)
-                    </th>
+                    @if( item.Item2)
+                    {
+                        <th class="btn btn-warning btn-harmonica-hole">
+                            @Html.DisplayFor(d => item.Item1)
+                        </th>
+                    } 
+                    @if(!item.Item2)
+                    {
+                        <th class="btn btn-outline-warning btn-harmonica-hole">
+                            @Html.DisplayFor(d => item.Item1)
+                        </th>
+                    } 
                     <th></th>
                 }
             </tr>
@@ -38,12 +54,21 @@
                 @foreach (var item in Model.Bend1Notes)
                 {
                     <th>
-                        @if (item != null)
+                    @if (item.Item1 != "")
+                    {
+                        @if( item.Item2)
+                        {
+                            <div class="btn btn-warning btn-harmonica-hole">
+                                @Html.DisplayFor(d => item.Item1)
+                            </div>
+                        } 
+                        @if(!item.Item2)
                         {
                             <div class="btn btn-outline-warning btn-harmonica-hole">
-                                @Html.DisplayFor(d => item)
+                                @Html.DisplayFor(d => item.Item1)
                             </div>
-                        }
+                        } 
+                    }
                     </th>
                     <th></th>
                 }
@@ -52,12 +77,21 @@
                 @foreach (var item in Model.Bend2Notes)
                 {
                     <th>
-                        @if (item != null)
+                    @if (item.Item1 != "")
+                    {
+                        @if( item.Item2)
+                        {
+                            <div class="btn btn-warning btn-harmonica-hole">
+                                @Html.DisplayFor(d => item.Item1)
+                            </div>
+                        } 
+                        @if(!item.Item2)
                         {
                             <div class="btn btn-outline-warning btn-harmonica-hole">
-                                @Html.DisplayFor(d => item)
+                                @Html.DisplayFor(d => item.Item1)
                             </div>
-                        }
+                        } 
+                    }
                     </th>
                     <th></th>
                 }
@@ -66,12 +100,21 @@
                 @foreach (var item in Model.Bend3Notes)
                 {
                     <th>
-                        @if (item != null)
+                    @if (item.Item1 != "")
+                    {
+                        @if( item.Item2)
+                        {
+                            <div class="btn btn-warning btn-harmonica-hole">
+                                @Html.DisplayFor(d => item.Item1)
+                            </div>
+                        } 
+                        @if(!item.Item2)
                         {
                             <div class="btn btn-outline-warning btn-harmonica-hole">
-                                @Html.DisplayFor(d => item)
+                                @Html.DisplayFor(d => item.Item1)
                             </div>
-                        }
+                        } 
+                    }
                     </th>
                     <th></th>
                 }

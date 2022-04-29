@@ -1,0 +1,18 @@
+﻿@model HT.Presentation.Models.HarmonicaViewModel
+
+<div class="container">
+    <form asp-action="ChangeTune" class="row">
+        <div asp-validation-summary="ModelOnly" class="text-danger row"></div>
+
+        <div class="form-group col-1">
+            <label asp-for="Tone" class="control-label"></label>
+            <input asp-for="Tone" class="form-control" />
+            @*<span asp-validation-for="Tone" class="text-danger"></span>*@
+        </div>
+        <div class="form-group  col-1">
+            <input type="submit" value="Change Tone" class="btn btn-primary" />
+        </div>
+
+
+    </form>
+</div>
